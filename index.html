@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">    
+<html lang="es" data-bs-theme="dark">    
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/yeti/bootstrap.min.css" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <title>Portafolio</title>
         <style>
             .circulo{
@@ -12,183 +11,137 @@
                 width: 10%;
             }
         </style>
-    </head>
-    
+    </head>    
     <body class="h-100 w-100">
         <h1 class="text-center border-bottom border-3 border-primary display-3">Portafolio</h1>
         <div class="container flex-grow-1 mt-0 mb-3">
             <div class="row my-4 justify-content-center align-items-center">
-                <p class="col-sm-12 col-md-8 d-inline mx-4 p-0 link-primary text-center h6">Hola, soy <strong class="fw-bold text-primary">Hallowed</strong>, también conocido como <strong class="fw-bold text-primary">Hallowed_B</strong>. Aqui se muestra una lista de ejemplos de mi estilo de edición, tanto en videos cortos como videos largos.</p>
+                <p class="col-sm-12 col-md-8 d-inline mx-4 p-0 text-center h6">Hola, soy <strong class="fw-bold text-primary">Hallowed</strong>, también conocido como <strong class="fw-bold text-primary">Hallowed_B</strong>. Aqui se muestra una lista de ejemplos de mi estilo de edición, tanto en videos cortos como videos largos.</p>
                 <img class="col-sm-12 col-md-4 px-0 h-25 w-25 rounded-circle border border-primary" src="Imagenes/SoySho.jpg">
             </div>
             <h2 class="text-primary border-bottom border-2 mt-3 mb-2 display-5">Videos Cortos</h2>
-            <h3 class="text-center border-bottom mb-2 display-6">Muse_ts</h2>
-            <div class="row">
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/aOKBNPVovoc" allowfullscreen></iframe>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 my-2">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="short1" src="https://www.youtube.com/embed/3et2h3du37w" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 my-2">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="short2" src="https://drive.google.com/file/d/1dMpKfeV6fWp4yBKOZb-LyMSIQmpUs477/preview" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/3IQA3y8EqiM" allowfullscreen></iframe>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 my-2">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="short3" src="https://drive.google.com/file/d/1MbQDITeMO6yc4gR_rByQTxKablGgnIkW/preview" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 my-2">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="short4" src="https://drive.google.com/file/d/1bPXFmDh0G0VYZlnFQ22G8wFgr-W7zvo9/preview" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <h3 class="text-center border-bottom mb-2 display-6">Hetto</h2>
-            <div class="row">
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/1LufOliVpQl1DPu_4wvqxKt9wufUhM7rq/preview" allowfullscreen></iframe>
-                    </div>
+                <div class="container flex-grow-1 d-flex justify-content-center">
+                    <div class="btn-group" role="group" aria-label="Mas shorts">
+                        <input type="radio" onclick="cambiarShorts(1)" class="btn-check" name="btnsrt" id="btnsrt1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnsrt1">1</label>
+                      
+                        <input type="radio" onclick="cambiarShorts(2)" class="btn-check" name="btnsrt" id="btnsrt2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnsrt2">2</label>
+                      
+                        <input type="radio" onclick="cambiarShorts(3)" class="btn-check" name="btnsrt" id="btnsrt3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnsrt3">3</label>
+                      </div>
                 </div>
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/1MbQDITeMO6yc4gR_rByQTxKablGgnIkW/preview" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <h3 class="text-center border-bottom mb-2 display-6">Pinku Berry</h2>
-            <div class="row">
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/1Z_Bebz1L3iyLsvdid9LH8ZD9L-83mCpD/preview" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://drive.google.com/file/d/1RiB2dHJsWzqFJ2udWu9KATapIK9N5Pgz/preview" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <h3 class="text-center border-bottom mb-2 display-6">Merchi</h2>
-            <div class="row">
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/3et2h3du37w" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/JHk82NwuU64" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <h3 class="text-center border-bottom mb-2 display-6">SattoAki</h2>
-            <div class="row">
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/FvCg2bLWPng" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/YNU6vMuX0uo" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
             <h2 class="text-primary border-bottom border-2 mt-3 mb-2 display-5">Videos Largos</h2>
-            <h3 class="text-center border-bottom mb-2 display-6">Muse_ts</h2>
-            <div class="row">
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/Xf4jrgT-xbw" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/kwTBUVQSxaQ" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <h3 class="text-center border-bottom mb-2 display-6">Hetto</h2>
-                <div class="row">
-                    <div class="col-12 my-2">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://drive.google.com/file/d/1vkXK34kU5UfxEgHkvm-YPFCE6x9wYW27/preview " allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            <h3 class="text-center border-bottom mb-2 display-6">Xege</h2>
                 <div class="row">
                     <div class="col-sm-12 col-md-6 my-2">
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/AOMymZ-O4Sw" allowfullscreen></iframe>
+                            <iframe id="vidlg1" src="https://www.youtube.com/embed/kwTBUVQSxaQ" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 my-2">
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/pbSjz224vRw" allowfullscreen></iframe>
+                            <iframe id="vidlg2" src="https://drive.google.com/file/d/1vkXK34kU5UfxEgHkvm-YPFCE6x9wYW27/preview" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 my-2">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/iPvYNmwxpkc" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 my-2">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/IEEf-tYEBwI" allowfullscreen></iframe>
-                        </div>
-                    </div>
+                <div class="container flex-grow-1 d-flex justify-content-center">
+                    <div class="btn-group" role="group" aria-label="Mas videos largos">
+                        <input type="radio" onclick="cambiarVidsLg(1)" class="btn-check" name="btnvidlg" id="btnvidlg1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnvidlg1">1</label>
+                      
+                        <input type="radio" onclick="cambiarVidsLg(2)" class="btn-check" name="btnvidlg" id="btnvidlg2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnvidlg2">2</label>
+                      
+                        <input type="radio" onclick="cambiarVidsLg(3)" class="btn-check" name="btnvidlg" id="btnvidlg3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnvidlg3">3</label>
+                      </div>
                 </div>
             <h2 class="text-primary border-bottom border-3 mt-3 mb-2 display-4">Precios</h2>
-
-              <table class="table table-striped text-center">
-                <thead>
-                  <tr class="table-primary">
-                    <th scope="col" colspan="4">Precios de short</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row"></th>
-                    <th scope="row">Base</th>
-                    <th scope="row">8 videos</th>
-                    <th scope="row">16 videos</th>
-                  </tr>
-                  <tr>
-                    <th scope="row">Si no debo buscar el material</th>
-                    <td>$5</td>
-                    <td>$35</td>
-                    <td>$70</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Si debo buscar el material</th>
-                    <td>$8</td>
-                    <td>$55</td>
-                    <td>$110</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <table class="table table-striped text-center">
-                <thead>
-                  <tr class="table-primary">
-                    <th scope="col" colspan="3">Precios de videos largos</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row"></th>
-                    <th scope="row">Edición Simple</th>
-                    <th scope="row">Edición Compleja</th>
-                  </tr>
-                  <tr>
-                    <th scope="row">Menos de una hora de material</th>
-                    <td>$25</td>
-                    <td>$50</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Menos de dos horas de material</th>
-                    <td>$40</td>
-                    <td>$80</td>
-                  </tr>
-                </tbody>
-              </table>
-
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col" colspan="4">Precios de shorts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"></th>
+                            <th scope="row">Base</th>
+                            <th scope="row">8 videos</th>
+                            <th scope="row">16 videos</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Si no debo buscar el material</th>
+                            <td>$5</td>
+                            <td>$35(1 video gratis)</td>
+                            <td>$70(2 videos gratis)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Si debo buscar el material</th>
+                            <td>$8</td>
+                            <td>$55(1 video gratis)</td>
+                            <td>$110(2 videos gratis)</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td scope="row" colspan="4">Plazo de entrega entre <strong>1-2 días</strong>. Si se quiere antes, el precio <strong>se dobla</strong></th>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col" colspan="3">Precios de videos largos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"></th>
+                            <th scope="row">Edición Simple</th>
+                            <th scope="row">Edición Compleja</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">40-79min de material</th>
+                            <td>$25</td>
+                            <td>$50</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">80-119min de material</th>
+                            <td>$40</td>
+                            <td>$80</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td scope="row" colspan="3">Se me debe indicar <strong>stream e intervalos de tiempo</strong> (Ej: De 1:08:22 a 2:04:47).</th>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td scope="row" colspan="3">Plazo de entrega entre <strong>3-5 días</strong>; <strong>4-7 días</strong> si es compleja. Si se quiere antes, el precio <strong>se dobla</strong></th>
+                        </tr>
+                    </tbody>
+                </table>
             <h2 class="text-primary border-bottom border-3 mt-3 mb-2 display-4">Canales para los que he trabajado</h2>
             <div class="row my-4 justify-content-center align-items-center">
                 <img class="col-4 px-0 circulo rounded-circle border border-primary" src="Imagenes/Muse.jpg">
@@ -201,6 +154,10 @@
             <div class="row my-4 justify-content-center align-items-center">
                 <img class="col-4 px-0 circulo rounded-circle border border-primary" src="Imagenes/Merchi.jpg">
                 <a class="col-8 d-inline mx-4 p-0 link-primary text-center display-6" href="https://www.youtube.com/channel/UCiAiGWNOTuFKbS1R3ZgKioQ">MerchiVT</a>
+            </div>
+            <div class="row my-4 justify-content-center align-items-center">
+                <a class="col-8 d-inline mx-4 p-0 link-primary text-center display-6" href="https://www.youtube.com/channel/UCXjKDqPnJlZ7Azi0oaocgmQ">PinkuBerry</a>
+                <img class="col-4 px-0 circulo rounded-circle border border-primary" src="Imagenes/Berry.jpg">
             </div>
             <h2 class="text-primary border-bottom border-3 mt-3 mb-2 display-4">Canales para los que trabajo acutalmente</h2>
             <div class="row my-4 justify-content-center align-items-center">
@@ -229,5 +186,58 @@
                 </div>
             </div>
         </footer>
+        <script type="text/javascript">
+            function cambiarShorts(par){
+                short1 = "https://www.youtube.com/embed/3et2h3du37w"; //Mer
+                short2 = "https://drive.google.com/file/d/1dMpKfeV6fWp4yBKOZb-LyMSIQmpUs477/preview"; //Aki
+                short3 = "https://drive.google.com/file/d/1MbQDITeMO6yc4gR_rByQTxKablGgnIkW/preview"; //Hetto
+                short4 = "https://drive.google.com/file/d/1bPXFmDh0G0VYZlnFQ22G8wFgr-W7zvo9/preview"; //Aki
+                short5 = "https://drive.google.com/file/d/1Z_Bebz1L3iyLsvdid9LH8ZD9L-83mCpD/preview"; //Berry
+                short6 = "https://www.youtube.com/embed/JHk82NwuU64"; //Mer
+                short7 = "https://www.youtube.com/embed/YNU6vMuX0uo"; //Aki
+                short8 = "https://drive.google.com/file/d/1LufOliVpQl1DPu_4wvqxKt9wufUhM7rq/preview"; //Hetto
+                short9 = "https://www.youtube.com/embed/3IQA3y8EqiM"; //Muse
+                short10 = "https://drive.google.com/file/d/1RiB2dHJsWzqFJ2udWu9KATapIK9N5Pgz/preview"; //Berry
+                short11 = "https://www.youtube.com/embed/FvCg2bLWPng"; //Aki
+                short12 = "https://www.youtube.com/embed/aOKBNPVovoc"; //Muse
+
+                if (par == 1) {
+                    document.getElementById("short1").src = short1;
+                    document.getElementById("short2").src = short2;
+                    document.getElementById("short3").src = short3;
+                    document.getElementById("short4").src = short4;
+                } else if (par == 2) {
+                    document.getElementById("short1").src = short5;
+                    document.getElementById("short2").src = short6;
+                    document.getElementById("short3").src = short7;
+                    document.getElementById("short4").src = short8;
+                } else {
+                    document.getElementById("short1").src = short9;
+                    document.getElementById("short2").src = short10;
+                    document.getElementById("short3").src = short11;
+                    document.getElementById("short4").src = short12;
+                }
+            }
+            function cambiarVidsLg(par){
+                vidLg1 = "https://www.youtube.com/embed/kwTBUVQSxaQ";
+                vidLg2 = "https://drive.google.com/file/d/1vkXK34kU5UfxEgHkvm-YPFCE6x9wYW27/preview";
+                vidLg3 = "https://www.youtube.com/embed/AOMymZ-O4Sw";
+                vidLg4 = "https://www.youtube.com/embed/pbSjz224vRw";
+                vidLg5 = "https://www.youtube.com/embed/Xf4jrgT-xbw";
+                vidLg6 = "https://www.youtube.com/embed/IEEf-tYEBwI";
+
+                if (par == 1) {
+                    document.getElementById("vidlg1").src = vidLg1;
+                    document.getElementById("vidlg2").src = vidLg2;
+                } else if (par == 2) {
+                    document.getElementById("vidlg1").src = vidLg3;
+                    document.getElementById("vidlg2").src = vidLg4;
+                } else {
+                    document.getElementById("vidlg1").src = vidLg5;
+                    document.getElementById("vidlg2").src = vidLg6;
+                }
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     </body>
 </html>
